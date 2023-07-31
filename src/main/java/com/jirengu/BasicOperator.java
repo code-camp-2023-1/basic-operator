@@ -10,7 +10,19 @@ public class BasicOperator {
         //Step 5：用100减去上一步的结果，打印剩余的数值
         int num1 = 3;
         int num2 = 14;
-        int result = ?;
+        int step1 = num2 * 4 ;
+//        System.out.println("num2 * 4 :" + num2);
+        int step2 = step1 + num1;
+//        System.out.println("step1 + num1:" + step2);
+        int step3 = step2 / 3;
+//        System.out.println("step2 / 3 ：" + step3);
+        int step4 = step3 % 5;
+//        System.out.println("step3 % 5：" + step4);
+        int step5 = 100 - step4;
+//        System.out.println("100 - step4:" + step5);
+
+        // 100 - ( ( ( (num2 * 4) + num1 ) / 3) % 5 )
+        int result = (100 - ((((num2 * 4)+ num1 )/3)%5) );
         System.out.println(result);
     }
 }
