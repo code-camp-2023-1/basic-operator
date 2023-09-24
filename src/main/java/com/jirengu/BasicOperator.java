@@ -10,7 +10,7 @@ public class BasicOperator {
         //Step 5：用100减去上一步的结果，打印剩余的数值
         int num1 = 3;
         int num2 = 14;
-        int result = ?;
+        int result = 100 - ((num2 * 4 + num1) / 3 % 5);
         System.out.println(result);
     }
 }
